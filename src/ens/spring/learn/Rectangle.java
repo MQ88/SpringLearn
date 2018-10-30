@@ -1,6 +1,6 @@
 package ens.spring.learn;
 
-public class Triangle implements Shapes {
+public class Rectangle implements Shapes {
 
 private String name;
 	
@@ -16,6 +16,7 @@ private String name;
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	
 	
 }
