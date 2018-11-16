@@ -1,21 +1,39 @@
 package ens.spring.learn;
 
-public class Rectangle implements Shapes {
+public class Rectangle extends Shapes {
 
-private String name;
+private int l;
+private int b;
+
+
+
+
+public Rectangle()
+{
 	
+}
+	public Rectangle(int l, int b) {
+	super();
+	this.l = l;
+	this.b = b;
+}
 	public void draw()
 	{
-		System.out.println("Drawing Shape:"+name);
+		System.out.println("Drawing Shape:"+getName());
+	}
+	public int getL() {
+		return l;
+	}
+	public void setL(int l) {
+		this.l = l;
+	}
+	public int getB() {
+		return b;
+	}
+	public void setB(int b) {
+		this.b = b;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
 	
 	
 	

@@ -4,13 +4,15 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan("ens.spring.learn.core.annotations")
+
 public class PlayBall {
 	
 	
 	public static void main(String[] args) {
 		
-		ApplicationContext ac=new AnnotationConfigApplicationContext(PlayBall.class);
+		ApplicationContext ac=new AnnotationConfigApplicationContext(BallComponentScan.class);
+	//	ApplicationContext ac1=new AnnotationConfigApplicationContext(PlayBall.class);
+//		AnnotationConfigApplicationContext()
 
 		Ball b=ac.getBean(Ball.class);
 		b.bounce();

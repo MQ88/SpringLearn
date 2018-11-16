@@ -19,8 +19,11 @@ public class DrawingApp {
 		
 	     Shapes triangle=(Shapes)beanFactory.getBean("Triangle");
 	     Shapes rectangle=(Shapes)beanFactory.getBean("Rectangle");
+	     
+	     
 	
 	     triangle.draw();
+	     System.out.println(triangle.toString());
 	     rectangle.draw();
 	}
 }

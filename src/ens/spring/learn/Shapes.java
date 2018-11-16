@@ -1,8 +1,14 @@
 package ens.spring.learn;
 
-public interface Shapes {
+public abstract class Shapes {
 	
-	
-	public void draw();
+	private String name;
+	public abstract void draw();
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 
 }

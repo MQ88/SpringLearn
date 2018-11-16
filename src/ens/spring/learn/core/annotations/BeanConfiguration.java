@@ -9,6 +9,8 @@ public class BeanConfiguration {
 	@Bean
 	public Ball ball()
 	{
-		return new Ball();
+		Ball b=new Ball(10);
+		
+		return b; 
 	}
 }
